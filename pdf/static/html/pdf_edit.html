@@ -3,10 +3,10 @@
 
     <li class="field comp-setting-entry is-set">
       <div class="wrapper-comp-setting">
-        <label class="label setting-label" for="pdf_edit_display_name">Name</label>
+        <label class="label setting-label" for="pdf_edit_display_name">Назва</label>
         <input class="input setting-input" id="pdf_edit_display_name" value="{{ display_name }}" type="text">
       </div>
-      <span class="tip setting-help">This name appears in the horizontal navigation at the top of the page.</span>
+      <span class="tip setting-help">Ця назва відображається в горизонтальному меню у верхній частині сторінки.</span>
     </li>
 
     <li class="field comp-setting-entry is-set">
@@ -14,30 +14,30 @@
         <label class="label setting-label" for="pdf_edit_url">PDF URL</label>
         <input class="input setting-input" id="pdf_edit_url" value="{{ url }}" type="text">
       </div>
-      <span class="tip setting-help">The URL of the PDF file</span>
+      <span class="tip setting-help">URL PDF-файлу</span>
     </li>
 
     <li class="field comp-setting-entry is-set">
       <div class="wrapper-comp-setting">
-        <label class="label setting-label" for="pdf_edit_allow_download">PDF Download Allowed</label>
+        <label class="label setting-label" for="pdf_edit_allow_download">Завантаження PDF Дозволено</label>
         <select class="input setting-input" id="pdf_edit_allow_download">
           <option value="True" {% if allow_download %}selected{% endif %}>True</option>
           <option value="False" {% if not allow_download %}selected{% endif %}>False</option>
         </select>
       </div>
-      <span class="tip setting-help">Display a download button for this PDF.</span>
+      <span class="tip setting-help">Відображати кнопку завантаження для цього PDF-файлу.</span>
     </li>
 
     <li class="field comp-setting-entry is-set">
       <div class="wrapper-comp-setting">
-        <label class="label setting-label" for="pdf_edit_source_text">Source document button text</label>
-        <input class="input setting-input" id="pdf_edit_source_text" value="{{ source_text }}" type="text" placeholder="Default : Download the source document">
+        <label class="label setting-label" for="pdf_edit_source_text">Текст кнопки вихідного документа</label>
+        <input class="input setting-input" id="pdf_edit_source_text" value="{{ source_text }}" type="text" placeholder="За замовчуванням: завантажте вихідний документ">
       </div>
       <div class="wrapper-comp-setting">
-        <label class="label setting-label" for="pdf_edit_source_url">Source document URL</label>
+        <label class="label setting-label" for="pdf_edit_source_url">URL вихідного документу</label>
         <input class="input setting-input" id="pdf_edit_source_url" value="{{ source_url }}" type="text">
       </div>
-      <span class="tip setting-help">Add the source document of your PDF (Powerpoint file, ...)</span>
+      <span class="tip setting-help">Додайте вихідний документ PDF-файлу (файл Powerpoint, ...)</span>
     </li>
 
   </ul>
@@ -45,10 +45,10 @@
   <div class="xblock-actions">
     <ul>
       <li class="action-item">
-        <a href="#" class="button action-primary action-save">Register</a>
+        <a href="#" class="button action-primary action-save">Зареєструвати</a>
       </li>
       <li class="action-item">
-        <a href="#" class="button action-cancel">Cancel</a>
+        <a href="#" class="button action-cancel">Вiдмiнити</a>
       </li>
     </ul>
   </div>
